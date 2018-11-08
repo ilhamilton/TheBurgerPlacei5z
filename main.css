@@ -1,0 +1,430 @@
+/* ----------------------------------------------- */
+
+/* BASIC SETUP */
+
+/* ----------------------------------------------- */
+
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+html,
+
+body {
+
+    background-color: #fff;
+
+    color: #555;
+
+    font-family: 'Lato', 'Arial', sans-serif;
+
+    font-weight: 300;
+
+    font-size: 20px;
+
+    text-rendering: optimizeLegibility;
+
+    overflow-x: hidden;
+
+}
+
+
+
+.flex-row {
+
+    display: flex;
+
+    flex-direction: row;
+
+    width: 70%;
+
+    margin: auto;
+
+}
+
+
+
+/* ----------------------------------------------- */
+
+/* Reusable Components */
+
+/* ----------------------------------------------- */
+
+
+
+.section {
+
+    padding: 80px;
+
+    width: 70%;
+
+    margin: auto;
+
+}
+
+
+
+h2 {
+
+    font-size: 180%;
+
+    word-spacing: 2px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+
+    font-weight: 300;
+
+    text-transform: uppercase;
+
+}
+
+
+
+h2:after {
+
+    display: block;
+
+    height: 2px;
+
+    background-color: #017eff;
+
+    content: " ";
+
+    width: 100px;
+
+    margin: 0 auto;
+
+    margin-top: 30px;
+
+}
+
+
+
+/* ----- PARAGRAPHS ----- */
+
+
+
+.long-copy {
+
+    line-height: 145%;
+
+    width: 70%;
+
+    margin-left: 15%;
+
+}
+
+
+
+/* ----- BUTTONS ----- */
+
+
+
+
+
+.btn:link,
+
+.btn:visited,
+
+input[type=submit] {
+
+    display: inline-block;
+
+    padding: 10px 30px;
+
+    font-weight: 300;
+
+    text-decoration: none;
+
+    border-radius: 200px;
+
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+
+
+.btn-full:link,
+
+.btn-full:visited,
+
+input[type=submit] {
+
+    background-color: #017eff;
+
+    border: 1px solid #017eff;
+
+    color: #fff;
+
+    margin-right: 15px;
+
+}
+
+
+
+.btn-ghost:link,
+
+.btn-ghost:visited {
+
+    border: 1px solid #017eff;
+
+    color: #017eff;
+
+}
+
+
+
+.btn:hover,
+
+.btn:active,
+
+input[type=submit]:hover,
+
+input[type=submit]:active {
+
+    background-color: #238fff;
+
+}
+
+
+
+.btn-full:hover,
+
+.btn-full:active {
+
+    border: 1px solid #238fff;
+
+}
+
+
+
+.btn-ghost:hover,
+
+.btn-ghost:active {
+
+    border: 1px solid #238fff;
+
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------- */
+
+/* HEADER SECTION */
+
+/* ----------------------------------------------- */
+
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/knifeInBurger.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    height: 100vh;
+}
+
+.header-text-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-bar {
+    flex: 1;
+    align-self: center;
+}
+
+.right-bar {
+    flex: 1;
+    align-self: center;
+    margin-right: 0;
+}
+
+.center {
+    flex: 2;
+    justify-self: center;
+    text-align: center;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub-header>* {
+    justify-self: center;
+    text-align: center;
+}
+
+
+h1 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 240%;
+
+    font-weight: 300;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    word-spacing: 4px;
+
+    margin-left: 2.5em;
+
+    text-indent: -2.5em;
+
+    padding-bottom: 1.5em;
+
+    line-height: 175%;
+
+}
+
+
+
+h3 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 150%;
+
+    font-weight: 300;
+
+    letter-spacing: 1px;
+
+    word-spacing: 4px;
+
+    padding-bottom: 1.5em;
+
+}
+p {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 150%;
+
+    font-weight: 300;
+
+    letter-spacing: 1px;
+
+    word-spacing: 4px;
+
+    padding-bottom: 1.5em;
+
+}
+
+
+
+.flex-row-header {
+
+    display: flex;
+
+    width: 70%;
+
+    margin: auto;
+
+    justify-content: space-between
+
+}
+
+
+
+.logo {
+
+    height: 100px;
+
+    width: auto;
+
+    margin-top: 20px;
+
+}
+
+
+
+
+
+/* Main navi */
+
+.main-nav {
+
+    list-style: none;
+
+    margin-top: 55px;
+
+}
+
+nav img {
+    border-radius: 25%;
+}
+
+.main-nav li {
+
+    display: inline-block;
+
+    margin-left: 40px;
+
+}
+
+
+
+.main-nav li a:link,
+
+.main-nav li a:visited {
+
+    padding: 8px 0;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    font-size: 90%;
+
+    border-bottom: 2px solid transparent;
+
+    -webkit-transition: border-bottom 0.2s;
+
+    transition: border-bottom 0.2s;
+
+}
+
+
+
+.main-nav li a:hover,
+
+.main-nav li a:active {
+
+    border-bottom: 2px solid #017eff;
+
+}

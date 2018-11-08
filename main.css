@@ -260,6 +260,7 @@ header {
     flex: 1;
     align-self: center;
     margin-right: 0;
+    text-align: right; 
 }
 
 .center {
